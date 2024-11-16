@@ -27,7 +27,6 @@
       "automerge": true
     }
   ],
-  "platform": "github",
   "platformAutomerge": true,
   "pre-commit": {
     "enabled": true
