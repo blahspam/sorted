@@ -1,0 +1,20 @@
+---
+version: "3"
+
+vars:
+  VERSION: 1.0.0-alpha.1
+
+tasks:
+  build:
+    desc: "Build the application"
+    dir: "{{.ROOT_DIR}}"
+    silent: true
+    cmds:
+      - go build ./... -o sorted
+
+  test:
+    desc: "Run the test suite"
+    dir: "{{.ROOT_DIR}}"
+    silent: true
+    cmds:
+      - go test ./... -o sorted
